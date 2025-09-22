@@ -12,7 +12,7 @@ const users = [
 const customers = [
   {
     id: 'd6e15727-9fe1-4961-8c5b-ea44a9bd81aa',
-    name: 'Evil Rabbit',
+    name: 'Evil Rawlin',
     email: 'evil@rabbit.com',
     image_url: '/customers/evil-rabbit.png',
   },
@@ -111,7 +111,7 @@ const invoices = [
   },
   {
     customer_id: customers[1].id,
-    amount: 500,
+    amount: 5000,
     status: 'paid',
     date: '2023-08-19',
   },
@@ -141,7 +141,7 @@ const revenue = [
   { month: 'Sep', revenue: 2500 },
   { month: 'Oct', revenue: 2800 },
   { month: 'Nov', revenue: 3000 },
-  { month: 'Dec', revenue: 4800 },
+  { month: 'Dec', revenue: 9800 },
 ];
 
 export { users, customers, invoices, revenue };
