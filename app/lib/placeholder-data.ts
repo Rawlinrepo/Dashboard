@@ -7,12 +7,18 @@ const users = [
     email: 'user@nextmail.com',
     password: '123456',
   },
-  // {
-  //   id: '460cebb6-0b51-4980-b95a-bcaf6bebd3fc',
-  //   name: 'Rawlin',
-  //   email: 'rawlin@gmail.com',
-  //   password: '123456',
-  // },
+  {
+    id: '460cebb6-0b51-4980-b95a-bcaf6bebd3fc',
+    name: 'Rawlin',
+    email: 'rawlin@gmail.com',
+    password: '123456',
+  },
+  {
+    id: 'aaabca5d-5440-48c4-af05-ef9e720810e7',
+    name: 'leo',
+    email: 'rawlin@gmail.com',
+    password: '55555',
+  },
 ];
 
 const customers = [
