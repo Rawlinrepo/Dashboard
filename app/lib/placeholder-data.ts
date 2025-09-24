@@ -19,6 +19,12 @@ const users = [
     email: 'leo@gmail.com',
     password: '555555',
   },
+  {
+    id: '0582de84-52bc-47a5-a306-fb8c6c477636',
+    name: 'shello',
+    email: 'shello@gmail.com',
+    password: 'abcdef',
+  },
 ];
 
 const customers = [
