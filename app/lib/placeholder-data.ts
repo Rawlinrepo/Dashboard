@@ -17,7 +17,7 @@ const users = [
     id: 'aaabca5d-5440-48c4-af05-ef9e720810e7',
     name: 'leo',
     email: 'leo@gmail.com',
-    password: '55555',
+    password: '555555',
   },
 ];
 
