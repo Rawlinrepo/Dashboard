@@ -14,12 +14,6 @@ const users = [
     password: '123456',
   },
   {
-    id: 'aaabca5d-5440-48c4-af05-ef9e720810e7',
-    name: 'leo',
-    email: 'leo@gmail.com',
-    password: '555555',
-  },
-  {
     id: '0582de84-52bc-47a5-a306-fb8c6c477636',
     name: 'shello',
     email: 'shello@gmail.com',
