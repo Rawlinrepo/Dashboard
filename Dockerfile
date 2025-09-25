@@ -1,9 +1,8 @@
-FROM node:20 AS build
+FROM node AS build
 
 WORKDIR /app
 
 COPY package*.json pnpm-lock.yaml ./
-
 
 RUN pnpm install
 
@@ -11,7 +10,7 @@ COPY . .
 
 RUN pnpm run build
 
-FROM node:20-alpine AS prod 
+FROM node-alpine AS prod 
 
 WORKDIR /app
 
