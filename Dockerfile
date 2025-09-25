@@ -1,4 +1,4 @@
-FROM node AS build
+FROM node:latest AS build
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ COPY . .
 
 RUN pnpm run build
 
-FROM node-alpine AS prod 
+FROM node:alpine AS prod 
 
 WORKDIR /app
 
