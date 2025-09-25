@@ -9,7 +9,7 @@ RUN pnpm install
 
 COPY . .
 
-RUN pnpm run build
+RUN npm run build
 
 FROM node:alpine AS prod 
 
