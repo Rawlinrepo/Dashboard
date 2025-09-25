@@ -6,3 +6,4 @@ services:
     volumes:
       - /usr/share/nginx/html/:/app/.next/static
       - /usr/share/nginx/html/:/app/public
+      
