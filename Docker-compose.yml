@@ -1,11 +1,7 @@
 services:
   client:
     build: .
-    
     ports: 
       - '3000:3000'
-    volumes:
-      - /usr/share/nginx/html/:/app/.next/static
-      - /usr/share/nginx/html/:/app/public
     env_file:
       - .env

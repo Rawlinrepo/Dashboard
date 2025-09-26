@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:latest AS build
 
 WORKDIR /app
 
@@ -11,15 +11,14 @@ COPY . .
 
 RUN pnpm build
 
-# FROM node:alpine AS prod 
+FROM node:alpine AS prod 
 
-# WORKDIR /app
+WORKDIR /app
 
-# COPY --from=build /app/.next/standalone ./
-# COPY --from=build /app/.next/static ./.next/static
-# COPY --from=build /app/public ./public
+COPY --from=build /app/.next/standalone ./
+COPY --from=build /app/.next/static ./.next/static
+COPY --from=build /app/public ./public
 
 EXPOSE 3000
 
-CMD [ "pnpm", "start"]
-#CMD [ "node", "server.js" ]
+CMD [ "node", "server.js" ]
