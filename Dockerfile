@@ -1,4 +1,4 @@
-FROM node:latest AS build
+FROM node:latest
 
 WORKDIR /app
 
@@ -8,7 +8,6 @@ RUN npm install -g pnpm
 RUN pnpm install
 
 COPY . .
-
 
 RUN pnpm build
 
@@ -22,5 +21,5 @@ RUN pnpm build
 
 EXPOSE 3000
 
-CMD [ "npm", "start"]
+CMD [ "pnpm", "start"]
 #CMD [ "node", "server.js" ]
