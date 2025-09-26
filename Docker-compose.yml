@@ -5,8 +5,8 @@ services:
      #   DATABASE_URL: ${DATABASE_URL}
     ports: 
       - '3000:3000'
-    volumes:
-      - /usr/share/nginx/html/:/app/.next/static
-      - /usr/share/nginx/html/:/app/public
+    # volumes:
+    #   - /usr/share/nginx/html/:/app/.next/static
+    #   - /usr/share/nginx/html/:/app/public
     env_file:
       - .env
