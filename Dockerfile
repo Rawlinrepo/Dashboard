@@ -9,6 +9,9 @@ RUN pnpm install
 
 COPY . .
 
+ARG DATABASE_URL
+ENV DATABASE_URL=$DATABASE_URL
+
 RUN pnpm build
 
 FROM node:alpine AS prod 
