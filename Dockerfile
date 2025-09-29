@@ -11,7 +11,7 @@ COPY . .
 
 RUN pnpm build
 
-FROM node:20-alpine AS prod 
+FROM node:20 AS prod 
 
 WORKDIR /app
 
