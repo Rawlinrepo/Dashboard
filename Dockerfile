@@ -38,7 +38,7 @@ RUN pnpm install
 COPY . .
 
 # Expose the dev port
-EXPOSE 3000
+EXPOSE 3001
 
 # Run Next.js in development mode
 CMD ["pnpm", "dev", "--hostname", "0.0.0.0"]
